@@ -12,8 +12,8 @@
 	<bean id="usersDAO" class="com.lei.demo.dao.UsersDAO">
 		  <property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	<bean id="userService" class="com.lei.demo.service.UserService">
+	<!-- <bean id="userService" class="com.lei.demo.service.impl.UserService">
 		<property name="userDao" ref="usersDAO"></property>
-	</bean>
+	</bean> -->
         
 </beans>

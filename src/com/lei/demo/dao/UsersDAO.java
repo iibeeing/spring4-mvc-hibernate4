@@ -6,12 +6,14 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.lei.demo.entity.Users;
 
-//@Repository
+@Repository
 public class UsersDAO {
-	//@Resource(name="sessionFactory")
+	@Autowired
 	private SessionFactory sessionFactory;
 
 	public void setSessionFactory(SessionFactory sessionFactory) {
